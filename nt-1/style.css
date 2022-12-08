@@ -46,3 +46,21 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.params-1 {
+    padding: 10px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.params-2 {
+    background-color: red;
+    padding: 10px;
+    border: 1px solid red;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+}

@@ -1,9 +1,9 @@
 "use strict";
 
+// let notice1 = document.getElementsByClassName('n1')[0];
+// let notice2 = document.getElementsByClassName('n2')[0];
 
 input_1.addEventListener("input", () => {
-  let notice1 = document.getElementsByClassName('n1')[0];
-  let notice2 = document.getElementsByClassName('n2')[0];
   let input_1 = document.getElementById("input_1");
 
   let lorem = document.getElementById("lorem");
@@ -13,12 +13,13 @@ input_1.addEventListener("input", () => {
 
   if (result === true) {
     // notice1.style.display = "block";
-    // input_1.style.background = "green";
-    // param.innerHTML = "Ushbu so'z matnda mavjud!";
+    param.innerHTML = "Ushbu so'z matnda mavjud🙂!";
+    param.classList.add('params-1');
+
   } else if (result === false) {
     // notice2.style.display = "block";
-    // input_1.style.background = "red";
-    // param.innerHTML = "Ushbu so'z matnda mavjud emas!";
+    param.classList.add('params-2');
+    param.innerHTML = "Ushbu so'z matnda mavjud emas☹️!";
   } else {
     alert ("Maydon bo'sh!!!");
   }
@@ -36,9 +37,13 @@ btn.addEventListener("click", () => {
 
    if (results === true) {
     params.innerHTML = "Ajoyib meva tanladingiz😁!";
+    params.classList.add('params-1');
 
   } else {
     params.innerHTML = "Kechirasiz, bazamizda bunday meva yoq😔!";
+    params.classList.add('params-2');
+
+
   }
 });
 
