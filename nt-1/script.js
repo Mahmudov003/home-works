@@ -14,8 +14,6 @@ input_1.addEventListener("input", () => {
   if (result === true) {
     notice1.style.display = "block";
     notice2.style.display = "none";
-    // param.classList.add('params-1');
-    // param.classList.remove('params-2');
 
   } else if (result === false) {
     notice2.style.display = "block";
