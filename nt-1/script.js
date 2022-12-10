@@ -1,7 +1,7 @@
 "use strict";
 
-// let notice1 = document.getElementsByClassName('n1')[0];
-// let notice2 = document.getElementsByClassName('n2')[0];
+let notice1 = document.getElementsByClassName('n1')[0];
+let notice2 = document.getElementsByClassName('n2')[0];
 
 input_1.addEventListener("input", () => {
   let input_1 = document.getElementById("input_1");
@@ -12,14 +12,14 @@ input_1.addEventListener("input", () => {
   let result = lorem.innerText.includes(input_1.value);
 
   if (result === true) {
-    // notice1.style.display = "block";
-    param.innerHTML = "Ushbu so'z matnda mavjud🙂!";
-    param.classList.add('params-1');
+    notice1.style.display = "block";
+    notice2.style.display = "none";
+    // param.classList.add('params-1');
+    // param.classList.remove('params-2');
 
   } else if (result === false) {
-    // notice2.style.display = "block";
-    param.classList.add('params-2');
-    param.innerHTML = "Ushbu so'z matnda mavjud emas☹️!";
+    notice2.style.display = "block";
+    notice1.style.display = "none";
   } else {
     alert ("Maydon bo'sh!!!");
   }
@@ -38,12 +38,12 @@ btn.addEventListener("click", () => {
    if (results === true) {
     params.innerHTML = "Ajoyib meva tanladingiz😁!";
     params.classList.add('params-1');
+    params.classList.remove('params-2');
 
   } else {
     params.innerHTML = "Kechirasiz, bazamizda bunday meva yoq😔!";
     params.classList.add('params-2');
-
-
+    params.classList.re4('params-1');
   }
 });
 
