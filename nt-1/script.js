@@ -46,11 +46,6 @@ btn.addEventListener("click", () => {
 });
 
 // //////////////////////////////////////////////////
-let form = document.getElementById('form');
 
-        form.onsubmit = function (e) {
-            e.preventDefault();
-       
-        };
 
 
